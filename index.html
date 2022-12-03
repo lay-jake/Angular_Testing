@@ -1,0 +1,35 @@
+<DOCTYPE html>
+
+	<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	</head>
+
+    <!-- Telling HTML file Angular App TODOLIST is part of body-->
+	<body ng-app="ToDoList">
+        <div ng-controller="MainController">
+            <div ng-repeat="item in list">
+                <li> {{ item }} </li>
+            </div>
+            <!--ng-model is binding this field to the variable 'addToDo' since we are in the div still for MainController it will use that
+            function in the controller -->
+            <input ng-model="addToDo">
+            <!--ng-click is similiar to react's onClick function (does not need anon funct)-->
+            <button ng-click="addItem()"> Add This To-Do</button>
+        </div>
+
+
+
+
+
+
+
+
+	<!-- Modules -->
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<!-- Controllers -->
+	<script src="js/controllers/MainController.js"></script>
+
+</body>
+</html>

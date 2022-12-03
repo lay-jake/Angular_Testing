@@ -1,0 +1,1 @@
+Small Project just messing around with AngularJS to get used to syntax and overall concept
